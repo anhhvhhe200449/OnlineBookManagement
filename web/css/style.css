@@ -1,0 +1,1060 @@
+/* ==================================================
+                    GLOBAL RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ==================================================
+                    LOGIN PAGE
+================================================== */
+
+body.login-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d9c3a3;
+}
+
+.login-form{
+    width:100%;
+    max-width:420px;
+}
+
+.login-form .card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 30px 60px rgba(0,0,0,0.25);
+    animation:fadeIn 0.6s ease;
+}
+
+.login-form .card-header{
+    background:#2f9d5a;
+    text-align:center;
+    padding:20px;
+}
+
+.login-form .card-header h3{
+    color:#fff;
+}
+
+.login-form .card-body{
+    padding:30px;
+}
+
+.login-form .form-control{
+    height:48px;
+    border-radius:8px;
+}
+
+.login-form .form-control:focus{
+    border-color:#2f9d5a;
+    box-shadow:0 0 0 3px rgba(47,157,90,0.2);
+}
+
+.login-form .btn-success{
+    width:100%;
+    border-radius:25px;
+}
+
+.login-form a{
+    color:#2f9d5a;
+    text-decoration:none;
+}
+
+.login-form a:hover{
+    text-decoration:underline;
+}
+
+
+/* ==================================================
+                    PROFILE PAGE
+================================================== */
+
+body.profile-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:60px;
+    background:#d9c3a3;
+}
+
+.profile-container{
+    width:100%;
+    max-width:520px;
+}
+
+.profile-container .card{
+    border:none;
+    border-radius:16px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.25);
+}
+/* Avatar + upload file */
+
+.profile-avatar{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.profile-avatar img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 10px auto;
+}
+
+.profile-avatar input[type="file"]{
+    display:block;
+    margin:0 auto;
+}
+.home-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background: #218838;
+    color: white;
+
+    padding: 8px 15px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.home-btn:hover{
+    background: #218838;
+}
+
+/* Avatar menu (góc phải trên) */
+
+.avatar-menu{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+}
+
+.avatar-menu img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.avatar-menu img:hover{
+    transform:scale(1.05);
+}
+
+/* Dropdown menu */
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    right:0;
+    margin-top:8px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    padding:10px 15px;
+    white-space:nowrap;
+}
+
+/* Menu links */
+
+.btn-edit-profile{
+    display:block;
+    padding:6px 12px;
+    margin-bottom:5px;
+    text-decoration:none;
+    color:#333;
+}
+
+.btn-edit-profile:hover{
+    background:#f2f2f2;
+}
+
+/* Avatar lớn trong profile */
+
+.avatar-img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin-bottom:10px;
+}
+
+input[type="file"]{
+    border:none;
+    box-shadow:none;
+    background:transparent;
+}
+
+
+/* ==================================================
+                    REGISTER PAGE
+================================================== */
+
+body.register-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d9c3a3;
+}
+
+.register-form{
+    width:100%;
+    max-width:420px;
+}
+
+.register-form .card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 30px 60px rgba(0,0,0,0.25);
+    animation:fadeIn 0.6s ease;
+}
+
+.register-form .card-header{
+    background:#2f9d5a;
+    text-align:center;
+    padding:20px;
+}
+
+.register-form .card-header h3{
+    color:#fff;
+}
+
+.register-form .card-body{
+    padding:30px;
+}
+
+.register-form .form-control{
+    height:48px;
+    border-radius:8px;
+}
+
+.register-form .form-control:focus{
+    border-color:#2f9d5a;
+    box-shadow:0 0 0 3px rgba(47,157,90,0.2);
+}
+
+.register-form .btn-success{
+    width:100%;
+    border-radius:25px;
+}
+
+.register-form a{
+    color:#2f9d5a;
+    text-decoration:none;
+}
+
+.register-form a:hover{
+    text-decoration:underline;
+}
+
+
+/* ==================================================
+                FORGOT PASSWORD PAGE
+================================================== */
+
+body.forgot-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d9c3a3;
+}
+
+.forgot-form{
+    width:100%;
+    max-width:420px;
+}
+
+.forgot-form .card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 30px 60px rgba(0,0,0,0.25);
+    animation:fadeIn 0.6s ease;
+}
+
+.forgot-form .card-header{
+    background:#2f9d5a;
+    text-align:center;
+    padding:20px;
+}
+
+.forgot-form .card-header h3{
+    color:#fff;
+}
+
+.forgot-form .card-body{
+    padding:30px;
+}
+
+
+/* ==================================================
+                RESET PASSWORD PAGE
+================================================== */
+
+body.reset-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d9c3a3;
+}
+
+.reset-form{
+    width:100%;
+    max-width:420px;
+}
+
+.reset-form .card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 30px 60px rgba(0,0,0,0.25);
+    animation:fadeIn 0.6s ease;
+}
+
+.reset-form .card-header{
+    background:#2f9d5a;
+    text-align:center;
+    padding:20px;
+}
+
+.reset-form .card-header h3{
+    color:#fff;
+}
+
+.reset-form .card-body{
+    padding:30px;
+}
+
+
+/* ==================================================
+                    ANIMATION
+================================================== */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==================================================
+                    MENU
+================================================== */
+/* ==================================================
+                    MENU
+================================================== */
+
+.menu{
+    list-style:none;
+    padding:0;
+    margin:20px;
+}
+
+/* Category item */
+
+.category-menu{
+    position:relative;
+    display:inline-block;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Link category */
+
+.category-menu > a{
+    text-decoration:none;
+    color:#333;
+    padding:8px 12px;
+    display:inline-block;
+}
+
+/* Dropdown */
+
+.dropdown{
+    position:absolute;
+    top:40px;
+    left:0;
+
+    background:white;
+    list-style:none;
+
+    padding:10px 0;
+    margin:0;
+
+    min-width:160px;
+
+    border-radius:6px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+
+    transition:0.2s;
+}
+
+
+/* Dropdown item */
+
+.dropdown li{
+    width:100%;
+}
+
+.dropdown li a{
+    display:block;
+    padding:8px 15px;
+    text-decoration:none;
+    color:black;
+}
+
+.dropdown li a:hover{
+    background:#f2f2f2;
+}
+.dropdown li:hover{
+    background:#f3f3f3;
+}
+
+/* Hover show dropdown */
+
+.category-menu:hover .dropdown{
+    display:block;
+}
+
+/* Avatar + username góc phải */
+
+
+/* avatar + username */
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+}
+
+/* avatar */
+
+.user-info img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* username */
+
+.user-info span{
+    font-weight:600;
+    font-size:15px;
+    color:#333;
+}
+
+.dropdown-menu{
+    display:none;
+
+    position:absolute;
+    right:0;
+    top:50px;
+
+    background:white;
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+    padding:8px 0;
+    min-width:150px;
+}
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#249b56;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:12px 60px;
+    position:relative;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    flex:1;
+}
+
+/* MENU CENTER */
+
+.nav-menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+
+    margin:0 auto;   /* giữ menu ở giữa */
+}
+
+.nav-menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* LOGIN BUTTONS */
+
+.auth-buttons{
+    display:flex;
+    gap:12px;
+    justify-content:flex-end;
+    flex:1;
+}
+/* logo */
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+
+    flex:1;
+}
+
+/* menu giữa */
+
+
+.nav-menu{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.nav-menu li{
+    display:flex;
+    align-items:center;
+}
+
+.nav-menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* avatar */
+
+.avatar-menu{
+    display:flex;
+    align-items:center;
+}
+.auth-buttons{
+    display:flex;
+    gap:12px;
+    align-items:center;
+
+    justify-content:flex-end;
+    flex:1;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* MENU */
+
+.nav-menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.nav-menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* AVATAR */
+
+.avatar-menu{
+    display:flex;
+    align-items:center;
+}
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+/* DROPDOWN */
+
+.dropdown-menu{
+    display:none;
+
+    top:60px;
+
+    background:white;
+
+    border-radius:8px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+    padding:10px;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:8px 15px;
+    text-decoration:none;
+    color:black;
+}
+
+/* SEARCH */
+
+.search-bar{
+    text-align:center;
+    margin:30px;
+}
+
+.search-bar input{
+    width:500px;
+    padding:10px;
+}
+
+.search-bar button{
+    padding:10px 20px;
+}
+
+/* BOOK GRID */
+
+.section-title{
+    text-align:center;
+    margin-top:30px;
+}
+
+
+.read-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#2b7de9;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* AVATAR */
+
+.avatar-menu{
+    position:relative;
+}
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+.dropdown-menu{
+    display:none;
+
+    position:absolute;
+    right:0;
+    top:50px;
+
+    background:white;
+    border-radius:8px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+    padding:10px;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:8px 15px;
+    text-decoration:none;
+    color:black;
+}
+
+
+.book-card{
+    width:180px;
+    text-align:center;
+    margin:auto;
+}
+
+.book-img{
+    width:180px;
+    height:250px;
+    object-fit:cover;
+    border-radius:6px;
+    display:block;
+    margin:auto;
+}
+
+.book-img:hover{
+    transform:scale(1.05);
+}
+
+.read-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#2b7de9;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+/* Auth buttons */
+
+.auth-buttons{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.login-btn{
+    padding:8px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    border:2px solid white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:white;
+    color:#2e8b57;
+}
+
+.register-btn{
+    padding:8px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    background:white;
+    color:#2e8b57;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.register-btn:hover{
+    background:#e6e6e6;
+}
+.pagination-dots{
+    text-align:center;
+    margin-top:30px;
+}
+
+.pagination-dots .dot{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin:5px;
+    border-radius:50%;
+    background:#ccc;
+    text-decoration:none;
+}
+
+.pagination-dots .dot.active{
+    background:#555;
+}
+.views{
+    font-size:14px;
+    color:#666;
+    margin-top:6px;
+}
+.remove-btn{
+    display:inline-block;
+    margin-top:6px;
+    color:white;
+    background:#e74c3c;
+    padding:5px 10px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.book-card:hover{
+    transform:translateY(-5px);
+}
+.btn{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.read-btn{
+    background:#2f80ed;
+}
+
+.remove-btn{
+    background:#e74c3c;
+}
+.book-detail{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+}
+
+.book-left{
+    width:250px;
+}
+
+.detail-cover{
+    width:100%;
+    border-radius:6px;
+}
+
+.chapter-btn{
+    display:block;
+    margin-top:10px;
+    background:#27ae60;
+    color:white;
+    text-align:center;
+    padding:10px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.book-right{
+    flex:1;
+}
+
+.book-title{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.book-right p{
+    margin:8px 0;
+}
+
+.bookmark{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.description{
+    margin-top:10px;
+    line-height:1.6;
+}
+
+.chapter-list{
+    margin-top:20px;
+}
+
+.chapter-item{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+.category-menu{
+    position: relative;
+}
+
+.category-menu .dropdown{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 6px;
+}
+
+.category-menu .dropdown li{
+    padding: 8px 15px;
+}
+
+.category-menu .dropdown li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.category-menu .dropdown li:hover{
+    background: #f3f3f3;
+}
+
+.category-menu .dropdown{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.category-menu:hover .dropdown{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+.dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.book-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,180px);
+    justify-content:center;
+    gap:70px;
+    margin-top:30px;
+}
+
+
+.read-btn{
+    display:inline-block;
+    margin-top:10px;
+    background:#3b82f6;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.views{
+    font-size:14px;
+    margin-top:5px;
+    color:#666;
+}
+.book-card{
+    text-align:center;
+}
+
+.book-img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.book-card h4{
+    margin-top:12px;
+    margin-bottom:10px;
+}
+
+.slider-wrapper{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.book-list{
+    display:grid;
+    grid-template-columns:repeat(5, 180px); /* 5 sách 1 dòng */
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.wishlist-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,180px);
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+.book-card{
+    text-align:center;
+    width:180px;
+}
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px 0;
+    gap:5px;
+}
+
+.pagination a{
+    padding:8px 14px;
+    border:1px solid #ddd;
+    text-decoration:none;
+    color:#555;
+    background:#f8f8f8;
+    font-size:14px;
+}
+
+.pagination a:hover{
+    background:#eee;
+}
+
+.pagination .active{
+    background:#2f80ed;
+    color:white;
+    border-color:#2f80ed;
+}
+
+.pagination .dots{
+    padding:8px 10px;
+    color:#888;
+}
