@@ -1,3 +1,4 @@
+
 package DAO;
 
 import java.util.List;
@@ -93,7 +94,7 @@ public class CategoryDAO extends DBContext{
         String sql = "SELECT * FROM Categories WHERE categoryID = ?";
         try{
             PreparedStatement ps = connection.prepareStatement(sql);
-ps.setInt(1, categoryID);
+            ps.setInt(1, categoryID);
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 return new Category(

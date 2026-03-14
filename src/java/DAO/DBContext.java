@@ -9,7 +9,7 @@ public class DBContext {
 
     public DBContext() {
         try {
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=BookDB;encrypt=true;trustServerCertificate=true";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=LibOnl;encrypt=true;trustServerCertificate=true";
             String user = "sa";
             String password = "123";
 
